@@ -1,0 +1,102 @@
+/* Universal selector: select elements of every type (whole document) */
+* {
+    color: purple;
+}
+
+/* Type selector: select all elements of the given element type */
+/* <div>Hello World!</div> */
+div {
+    color: aqua;
+}
+
+/* Class selector: select all elements within the given class */
+/* <div class="hello-world">Hello World!</div> */
+.hello-world {
+    color: azure;
+}
+
+/* ID selector: select an element with the given ID */
+/* <div id="hello-world">Hello World!</div> */
+#hello-world {
+    color: beige;
+}
+
+/* Group selector */
+.hello, 
+.world {
+    color: salmon;
+    background-color: white;
+}
+
+.hello {
+
+}
+
+.world {
+
+}
+
+/* Chaining selector */
+/* <div>
+        <div class="chain hello">Hello</div>
+        <p class="chain world">World</div>
+        <p class="chain" id="hello-world">Hello World</div>
+   </div> */
+.chain.hello {
+    color: seashell;
+}
+
+.chain#hello-world {
+    color: greenyellow;
+}
+
+/* Descendant combinator: child will only be selected if it is nested inside ancestor */
+/* <div class="ancestor">
+        <div class="contents">
+            <div class="contents></div>
+        </div>
+    </div>
+    
+    <div class="contents"></div> [THIS IS NOT SELECTED BECAUSE IT IS NOT NESTED WITHIN ANCESTOR]*/ 
+.ancestor .contents {
+    color: antiquewhite;
+}
+
+/* CSS Properties */
+p {
+    /* hex */
+    color: #000000; /* text color */
+}
+
+p {
+    /* rgb */
+    background-color: rgb(255, 255, 255); /* background color */
+}
+
+p {
+    /* hsl */
+    color: hsl (15, 85%, 15%);
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    font-weight: 700; /* bold */
+    text-align: center; /* align text horizontally within an element */
+}
+
+/* Image height and width */
+img {
+    height: auto;
+    width: 500px;
+}
+
+/* Divider */
+div {
+  color: white;
+  background-color: black;
+}
+
+p {
+  color: red;
+}
