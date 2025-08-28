@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Boilerplate | The Odin Project</title>
+    </head>
+    <body>
+        <h1>Hello World!</h1>
+        <h2>This is heading 2</h2>
+        <h3>This is heading 3</h3> 
+        <h4>This is heading 4</h4> 
+        <h5>This is heading 5</h5>
+        <h6>This is heading 6</h6>
+        <strong>Makes text bold, semantically marks text as important</strong> <p/>
+        <em>Makes text italic, semantically places emphasis on the text</em>
+        <!-- This is a comment -->
+        <!-- Shortcut for comment block: Cmd + / -->
+        <p>
+            Lorem ipsum dolor sit amet, <strong>consectetur adipiscing</strong> elit, sed do <em>eiusmod tempor</em> incididunt ut labore et dolore magna aliqua.
+        </p>
+        <p>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <ul>
+            <li>This</li>
+            <li>is</li>
+            <li>an</li> 
+            <li>unordered</li>
+            <li>list</li>
+        </ul>
+        <ol>
+            <li>This</li>
+            <li>is</li>
+            <li>an</li> 
+            <li>ordered</li>
+            <li>list</li>
+        </ol>
+        <a>This is an anchor tag</a> <p/>
+        <!-- Absolute links: scheme://domain/path -->
+        <a href="https://casilynzirui.tech">This is href attribute to the anchor tag</a> <p/>
+        <a href="https://casilynzirui.tech" target="_blank">This is the target attribute, _blank opens up a new tab</a> <p/>
+        <a href="https://casilynzirui.tech" target="_blank" rel="noopener noreferrer">The rel attribute, is used to describe the relation between the current page and the linked document</a> <p/>
+        <!-- noopener -->
+        <!-- The noopener value of the rel attribute ensures that a link opened in a new tab cannot interact with or access the original page. 
+             Without the rel attribute, the new page can use JS to manipulate the original page, which poses a security risk. -->
+        <!-- noreferrer -->
+        <!-- The noreferrer value of the rel attribute provides both privacy and security.
+             It prevents the new page from knowing where the user came from (hiding the referrer)
+             and also includes the behavior of noopener, preventing the new page from accessing the original page. -->
+        <!-- Relative links -->
+        <a href="about.html">About</a> <p/>
+        <a href="./pages/about.html">About</a> <p/>
+        <!-- Images: <img> is a void element, do not need a closing tag as they are naturally empty and do not contain any content -->
+        <img src="image.png"> <p/>
+        <img src="../images/image.png" alt="This is an example of parent directory and alt attribute"> <p/>
+        <!-- The alt attribute, alternative text, is used to describe an image, and it will be displayed in place of the image if the image cannot be loaded -->
+        <img src="../images/image.png" alt="This is an example of image size attributes" height="300" width="400"> <p/>
+
+    </body>
+</html>
+
